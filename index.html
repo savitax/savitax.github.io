@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savita</title>
+    <link rel="stylesheet" href="./css/ImgToBase64.css">
+</head>
+
+<body>
+    <div class="item1">
+        <div class="choose">
+            <input type="file" id="image-input" accept="image/*">
+            <div class="cover">点击选择或拖动图片到此处</div>
+        </div>
+        <div class="url">
+            <input type="text" id="image-url" placeholder="输入图片链接">
+            <button id="image-url-submit">使用链接</button>
+        </div>
+        <div class="preview">
+            <img id="preview-image" src="./static/null.png" alt="预览图片">
+        </div>
+        <textarea id="base64-output" readonly title="点击复制，右键单击删除"></textarea>
+    </div>
+    <script src="./js/ImgToBase64.js"></script>
+</body>
+
+</html>
